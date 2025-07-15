@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alya Capital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000000 url('star.jpeg') no-repeat center center;
+            background-size: cover;
+            height: 110vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: .5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transform: translateY(-20vh);
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.3), 0 0 30px rgba(255,255,255,0.1);
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.3)) drop-shadow(0 0 20px rgba(255,255,255,0.2));
+        }
+
+        .btn-primary {
+            background: white;
+            color: black;
+        }
+
+        .btn-primary:hover {
+            background: #f0f0f0;
+            color: black;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.25)) drop-shadow(0 0 30px rgba(255,255,255,0.15));
+        }
+
+        .btn-secondary {
+            background: white;
+            color: black;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: #f0f0f0;
+            color: black;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.25)) drop-shadow(0 0 30px rgba(255,255,255,0.15));
+        }
+
+        .logo-glow {
+            width: 640px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+            filter: drop-shadow(0 0 10px #fff6) drop-shadow(0 0 20px #fff3);
+            transition: filter 0.3s, transform 0.3s;
+        }
+
+        
+
+        .hero-summary {
+            margin-top: -120px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+            background: rgba(0,0,0,0.6);
+            display: inline-block;
+            padding: 0.5em 1.5em;
+            border-radius: 1em;
+        }
+
+       
+
+        @keyframes floatLogo {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="Capital.png" alt="Alya Logo" class="logo-glow" />
+        <p class="hero-summary">
+            The grant to empower the next generation of cybersecurity leaders and trailblazers.  
+        </p>
+        <div class="button-group">
+            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="#" class="btn btn-secondary">Support</a>
+        </div>
+    </div>
+</body>
+</html>
