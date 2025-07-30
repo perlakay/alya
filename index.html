@@ -50,6 +50,7 @@
             min-height: 100vh;
             position: relative;
             z-index: 2;
+            gap: 0;
         }
 
         .hero h1 {
@@ -125,6 +126,7 @@
             margin: 0 auto;
             filter: drop-shadow(0 0 10px #fff6) drop-shadow(0 0 20px #fff3);
             transition: filter 0.3s, transform 0.3s;
+            vertical-align: top;
         }
 
         .hero-summary {
@@ -136,6 +138,8 @@
             border-radius: 1em;
             max-width: 90%;
             word-wrap: break-word;
+            margin: 0;
+            line-height: 1.2;
         }
 
         @keyframes floatLogo {
@@ -215,10 +219,10 @@
 </head>
 <body>
     <div class="hero">
-        <img src="Capital.png" alt="Alya Logo" class="logo-glow" />
         <p class="hero-summary">
             The grant to empower the next generation of cybersecurity leaders and trailblazers.  
         </p>
+        <img src="Capital.png" alt="Alya Logo" class="logo-glow" />
         <div class="button-group">
             <a href="#" class="btn btn-primary">Learn More</a>
             <a href="#" class="btn btn-secondary">Support</a>
